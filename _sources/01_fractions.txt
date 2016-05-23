@@ -32,7 +32,8 @@ Having proved the existence of :math:`x,y \mathbb{N}` satisfying ..., then
    such that :math:`(x,y) = 1` and :math:`x \le a`, :math:`y \le b`
 
    satisfying the equation 
-   :math:` \large\frac{a}{b} \normalsize = \large\frac{x}{y} + \large\frac{ay - bx}{by}`.
+   :math:`\large\frac{a}{b} \normalsize = \large\frac{x}{y} +`
+   :math:`\large\frac{ay-bx}{by} \normalsize`.
 
 ----
 
