@@ -1,0 +1,25 @@
+.. _fractions2:
+
+#############################
+Egyptian Fractions II
+#############################
+
+.. admonition:: Proposition 1.
+
+   Given vulgar fraction :math:`\large\frac{a}{b} \in \mathbb{Q}`
+   where :math:`1 < a < b` and :math:`(a,b) = 1`.
+   
+   Then :math:`\exists` some :math:`0 < x < y \in \mathbb{N}` 
+   where :math:`(x,y) = 1` and :math:`x \le a`, :math:`y \le b`
+
+   which satisfy the equation :math:`ay - bx = 1`, and where 
+   :math:`\large\frac{x}{y} \normalsize < \large\frac{a}{b}`.
+
+Clearly,
+
+:math:`\large\frac{a}{b} \normalsize = \large\frac{x}{y} \normalsize +`
+:math:`\large\frac{a}{b} \normalsize - \large\frac{a}{b}`
+:math:`\Longrightarrow`
+:math:`\large\frac{a}{b} \normalsize = \large\frac{x}{y} \normalsize +`
+:math:`\large\frac{ay-bx}{by} \normalsize`
+   

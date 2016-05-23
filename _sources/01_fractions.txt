@@ -1,0 +1,134 @@
+.. _fractions1:
+
+#############################
+Egyptian Fractions I
+#############################
+
+Background
+=============================
+
+Preliminary Steps
+=============================
+
+.. admonition:: Proposition 1.
+
+   Given integers :math:`1 < a < b \in \mathbb{N}` where :math:`(a,b) = 1`, then
+
+   :math:`\exists` some :math:`y > x > 0 \in \mathbb{N}` 
+   where :math:`(x,y) = 1` and :math:`x \le a`, :math:`y \le b`
+
+   which satisfy the equation :math:`ay - bx = 1`.
+
+Proof:
+
+
+Having proved the existence of :math:`x,y \mathbb{N}` satisfying ..., then
+
+
+   Given vulgar fraction :math:`\large\frac{a}{b} \normalsize\in \mathbb{Q}`
+   where :math:`1 < a < b \in \mathbb{N}` and :math:`(a,b) = 1`, then
+
+   :math:`\exists` some :math:`y > x > 0  \in  \mathbb{N}` 
+   such that :math:`(x,y) = 1` and :math:`x \le a`, :math:`y \le b`
+
+   satisfying the equation 
+   :math:` a \over b = x \over y \plus ( a \times y - b \times x ) \over ( b \times y )`.
+
+----
+
+:math:`ay - bx = 1 \Longrightarrow y = ( bx + 1 ) / a` and
+:math:`x = ( ay -1 ) / b` ; or
+
+:math:`(bx + 1) \equiv 0 \bmod{a}` and :math:`(ay - 1) \equiv 0 \bmod{b}`
+
+.. sidebar:: Calculations
+   
+   +----+------+--------+--------+-------------+
+   | *x*|\| *y*|\| *a*y*|\| *b*x*|\| *a*y--b*x*|
+   +====+======+========+========+=============+
+   |   **Step 1:**                             |
+   +----+------+--------+--------+-------------+
+   |  1 |\|  3 |\| 69   |\| 47   |\|  22       |
+   +----+------+--------+--------+-------------+
+   |  2 |\|  5 |\| 115  |\| 94   |\|  21       |
+   +----+------+--------+--------+-------------+
+   |  3 |\|  7 |\| 161  |\| 141  |\|  20       |
+   +----+------+--------+--------+-------------+
+   | ...|\| ...|\| ...  |\| ...  |\|  ...      |
+   +----+------+--------+--------+-------------+
+   | 22 |\| 45 |\| 1035 |\| 1034 |\|  1        |
+   +----+------+--------+--------+-------------+
+   |   **Step 2:**                             |
+   +----+------+--------+--------+-------------+
+   |  1 |\|  7 |\| 49   |\| 45   |\|  4        |
+   +----+------+--------+--------+-------------+
+   |  2 |\|  13|\| 91   |\| 90   |\|  1        |
+   +----+------+--------+--------+-------------+
+   |   **Step 3:**                             |
+   +----+------+--------+--------+-------------+
+   |  1 |\|  7 |\| 14   |\| 13   |\|  1        |
+   +----+------+--------+--------+-------------+
+
+.. admonition:: Example
+
+   For :math:`a = 23` and :math:`b = 47`, find distinct denominators :math:`d_n`
+   
+   :math:`\large\frac{23}{47} \normalsize =`
+   :math:`\large\frac{1}{d_1} \normalsize +`
+   :math:`\large\frac{1}{d_2} \normalsize +`
+   :math:`\large\frac{1}{d_3} \normalsize +`
+   :math:`\large\frac{1}{d_4} \normalsize +`
+   :math:`\large\frac{1}{d_5} \normalsize`
+   
+   Step 1:
+   
+   :math:`\large\frac{23}{47} \normalsize =`
+   :math:`\large\frac{1}{47 \times 45} \normalsize +`
+   :math:`\large\frac{22}{45} \normalsize`
+   and
+   :math:`\large\frac{22}{45} \normalsize =`
+   :math:`\large\frac{1}{3} \normalsize +`
+   :math:`\large\frac{7}{45} \normalsize`
+   
+   Step 2:
+   
+   :math:`\large\frac{7}{45} \normalsize =`
+   :math:`\large\frac{1}{45 \times 13} \normalsize +`
+   :math:`\large\frac{2}{13} \normalsize`
+   
+   Step 3:
+   
+   :math:`\large\frac{2}{13} \normalsize =`
+   :math:`\large\frac{1}{7} \normalsize +`
+   :math:`\large\frac{1}{13 \times 7} \normalsize`
+   
+   Result:
+   
+   :math:`\large\frac{23}{47} \normalsize =`
+   :math:`\large\frac{1}{47 \times 45} \normalsize +`
+   :math:`\large\frac{1}{3} \normalsize +`
+   :math:`\large\frac{1}{45 \times 13} \normalsize +`
+   :math:`\large\frac{1}{7} \normalsize +`
+   :math:`\large\frac{1}{13 \times 7} \normalsize`
+
+Method:
+=============================
+
+#. Find the largest fraction :math:`\large\frac{x}{y}` where :math:`ay - bx = 1`
+   and :math:`(x,y) = 1`.
+#. Suppose :math:`y \not\in \mathbb{P}, y = p_1\times p_2\cdots p_n`, and 
+   :math:`x > p_i \cdots p_k`. Then :math:`\large\frac{x}{y} \normalsize =`
+   :math:`\large\frac{1}{y / p_i \cdots p_k} \normalsize +`
+   :math:`\large\frac{x - p_i \cdots p_k}{y}`.
+#. Express 
+   :math:`\large\frac{a}{b} \normalsize = \large\frac{1}{by} \normalsize +`
+   :math:`\large\frac{x}{y}`
+   according to step 1, or if step 2 applies, use 
+   
+   :math:`\large\frac{a}{b} \normalsize = \large\frac{1}{by} \normalsize +`
+   :math:`\large\frac{1}{y / p_i \cdots p_k} \normalsize +`
+   :math:`\large\frac{x - p_i \cdots p_k}{y}`
+#. For either :math:`x > 1` or :math:`x - p_i \cdots p_k > 1`, set new values of 
+   either :math:`a = x` or :math:`a = x - p_i \cdots p_k` and :math:`b = y`;
+   then iterate steps 1 through 3.
+#. Combine all unary fractions into a sum expressing the Egyptian fraction result.

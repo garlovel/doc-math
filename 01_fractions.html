@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Egyptian Fractions I &mdash; Mathematics Notes Never documentation</title>
+    
+    <link rel="stylesheet" href="_static/aaltsys.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     'Never',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Mathematics Notes Never documentation" href="README.html" />
+    <link rel="up" title="Random Mathematics Topics" href="index.html" />
+    <link rel="next" title="Egyptian Fractions II" href="02_fractions.html" />
+    <link rel="prev" title="Random Mathematics Topics" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="02_fractions.html" title="Egyptian Fractions II"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="index.html" title="Random Mathematics Topics"
+             accesskey="P">previous</a> |</li>
+        <li><a href="README.html">Mathematics Notes Never documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Random Mathematics Topics</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="README.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Egyptian Fractions I</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#preliminary-steps">Preliminary Steps</a></li>
+<li><a class="reference internal" href="#method">Method:</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Random Mathematics Topics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="02_fractions.html"
+                        title="next chapter">Egyptian Fractions II</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/01_fractions.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="egyptian-fractions-i">
+<span id="fractions1"></span><h1>Egyptian Fractions I<a class="headerlink" href="#egyptian-fractions-i" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="preliminary-steps">
+<h2>Preliminary Steps<a class="headerlink" href="#preliminary-steps" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-proposition-1 admonition">
+<p class="first admonition-title">Proposition 1.</p>
+<p>Given integers <span class="math">\(1 &lt; a &lt; b \in \mathbb{N}\)</span> where <span class="math">\((a,b) = 1\)</span>, then</p>
+<p><span class="math">\(\exists\)</span> some <span class="math">\(y &gt; x &gt; 0 \in \mathbb{N}\)</span>
+where <span class="math">\((x,y) = 1\)</span> and <span class="math">\(x \le a\)</span>, <span class="math">\(y \le b\)</span></p>
+<p class="last">which satisfy the equation <span class="math">\(ay - bx = 1\)</span>.</p>
+</div>
+<p>Proof:</p>
+<p>Having proved the existence of <span class="math">\(x,y \mathbb{N}\)</span> satisfying ..., then</p>
+<blockquote>
+<div><p>Given vulgar fraction <span class="math">\(\large\frac{a}{b} \normalsize\in \mathbb{Q}\)</span>
+where <span class="math">\(1 &lt; a &lt; b \in \mathbb{N}\)</span> and <span class="math">\((a,b) = 1\)</span>, then</p>
+<p><span class="math">\(\exists\)</span> some <span class="math">\(y &gt; x &gt; 0  \in  \mathbb{N}\)</span>
+such that <span class="math">\((x,y) = 1\)</span> and <span class="math">\(x \le a\)</span>, <span class="math">\(y \le b\)</span></p>
+<p>satisfying the equation
+:math:` a over b = x over y plus ( a times y - b times x ) over ( b times y )`.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><span class="math">\(ay - bx = 1 \Longrightarrow y = ( bx + 1 ) / a\)</span> and
+<span class="math">\(x = ( ay -1 ) / b\)</span> ; or</p>
+<p><span class="math">\((bx + 1) \equiv 0 \bmod{a}\)</span> and <span class="math">\((ay - 1) \equiv 0 \bmod{b}\)</span></p>
+<div class="sidebar">
+<p class="first sidebar-title">Calculations</p>
+<table border="1" class="last docutils">
+<colgroup>
+<col width="10%" />
+<col width="15%" />
+<col width="21%" />
+<col width="21%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>x</em></th>
+<th class="head">| <em>y</em></th>
+<th class="head">| <em>a*y</em></th>
+<th class="head">| <em>b*x</em></th>
+<th class="head">| <em>a*y&#8211;b*x</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="5"><strong>Step 1:</strong></td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>|  3</td>
+<td>| 69</td>
+<td>| 47</td>
+<td>|  22</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>|  5</td>
+<td>| 115</td>
+<td>| 94</td>
+<td>|  21</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>|  7</td>
+<td>| 161</td>
+<td>| 141</td>
+<td>|  20</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>| ...</td>
+<td>| ...</td>
+<td>| ...</td>
+<td>|  ...</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>| 45</td>
+<td>| 1035</td>
+<td>| 1034</td>
+<td>|  1</td>
+</tr>
+<tr class="row-even"><td colspan="5"><strong>Step 2:</strong></td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>|  7</td>
+<td>| 49</td>
+<td>| 45</td>
+<td>|  4</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>|  13</td>
+<td>| 91</td>
+<td>| 90</td>
+<td>|  1</td>
+</tr>
+<tr class="row-odd"><td colspan="5"><strong>Step 3:</strong></td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>|  7</td>
+<td>| 14</td>
+<td>| 13</td>
+<td>|  1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>For <span class="math">\(a = 23\)</span> and <span class="math">\(b = 47\)</span>, find distinct denominators <span class="math">\(d_n\)</span></p>
+<p><span class="math">\(\large\frac{23}{47} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{d_1} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{d_2} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{d_3} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{d_4} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{d_5} \normalsize\)</span></p>
+<p>Step 1:</p>
+<p><span class="math">\(\large\frac{23}{47} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{47 \times 45} \normalsize +\)</span>
+<span class="math">\(\large\frac{22}{45} \normalsize\)</span>
+and
+<span class="math">\(\large\frac{22}{45} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{3} \normalsize +\)</span>
+<span class="math">\(\large\frac{7}{45} \normalsize\)</span></p>
+<p>Step 2:</p>
+<p><span class="math">\(\large\frac{7}{45} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{45 \times 13} \normalsize +\)</span>
+<span class="math">\(\large\frac{2}{13} \normalsize\)</span></p>
+<p>Step 3:</p>
+<p><span class="math">\(\large\frac{2}{13} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{7} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{13 \times 7} \normalsize\)</span></p>
+<p>Result:</p>
+<p class="last"><span class="math">\(\large\frac{23}{47} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{47 \times 45} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{3} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{45 \times 13} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{7} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{13 \times 7} \normalsize\)</span></p>
+</div>
+</div>
+<div class="section" id="method">
+<h2>Method:<a class="headerlink" href="#method" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Find the largest fraction <span class="math">\(\large\frac{x}{y}\)</span> where <span class="math">\(ay - bx = 1\)</span>
+and <span class="math">\((x,y) = 1\)</span>.</p>
+</li>
+<li><p class="first">Suppose <span class="math">\(y \not\in \mathbb{P}, y = p_1\times p_2\cdots p_n\)</span>, and
+<span class="math">\(x &gt; p_i \cdots p_k\)</span>. Then <span class="math">\(\large\frac{x}{y} \normalsize =\)</span>
+<span class="math">\(\large\frac{1}{y / p_i \cdots p_k} \normalsize +\)</span>
+<span class="math">\(\large\frac{x - p_i \cdots p_k}{y}\)</span>.</p>
+</li>
+<li><p class="first">Express
+<span class="math">\(\large\frac{a}{b} \normalsize = \large\frac{1}{by} \normalsize +\)</span>
+<span class="math">\(\large\frac{x}{y}\)</span>
+according to step 1, or if step 2 applies, use</p>
+<p><span class="math">\(\large\frac{a}{b} \normalsize = \large\frac{1}{by} \normalsize +\)</span>
+<span class="math">\(\large\frac{1}{y / p_i \cdots p_k} \normalsize +\)</span>
+<span class="math">\(\large\frac{x - p_i \cdots p_k}{y}\)</span></p>
+</li>
+<li><p class="first">For either <span class="math">\(x &gt; 1\)</span> or <span class="math">\(x - p_i \cdots p_k &gt; 1\)</span>, set new values of
+either <span class="math">\(a = x\)</span> or <span class="math">\(a = x - p_i \cdots p_k\)</span> and <span class="math">\(b = y\)</span>;
+then iterate steps 1 through 3.</p>
+</li>
+<li><p class="first">Combine all unary fractions into a sum expressing the Egyptian fraction result.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="02_fractions.html" title="Egyptian Fractions II"
+             >next</a></li>
+        <li class="right" >
+          <a href="index.html" title="Random Mathematics Topics"
+             >previous</a> |</li>
+        <li><a href="README.html">Mathematics Notes Never documentation</a> &raquo;</li>
+          <li><a href="index.html" >Random Mathematics Topics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Gerald Lovel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
+    </div>
+  </body>
+</html>
